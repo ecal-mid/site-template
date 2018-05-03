@@ -13,6 +13,45 @@ const content = {
     }
   ],
   wrapperModules: [
+    {
+      type: 'Video',
+      file: 'resources/barradeau/Virag_Tamara_ShaderMoon/moonshade.mp4',
+      margin: true,
+      style: {
+        height: 'initial'
+      }
+    },
+    {
+      type: 'SensoryTitle',
+      title: 'Shader Moon',
+      student: 'Tamara Viràg'
+    },
+    {
+      type: 'Video',
+      file: 'resources/barradeau/Al_Zouabi_Alfatih_Ohboi/decroissance.mp4',
+      margin: true,
+      style: {
+        height: 'initial'
+      }
+    },
+    {
+      type: 'SensoryTitle',
+      title: 'Oh boi',
+      student: 'Alfatih Al Zouabi'
+    },
+    {
+      type: 'Video',
+      file: 'resources/barradeau/Boulenaz_jonathan_HeartBeat/SB_3_4_1.mp4',
+      margin: true,
+      style: {
+        height: 'initial'
+      }
+    },
+    {
+      type: 'SensoryTitle',
+      title: 'Heart Beat',
+      student: 'Jonathan Boulenaz'
+    },
     // Sebastien Matos
     {
       type: 'IFrame',
@@ -54,12 +93,15 @@ const content = {
     {
       type: 'SensoryTitle',
       title: 'Infected',
-      student: 'Iyo Bisseck'
+      student: 'Iyo Bisseck',
     },
     {
       type: 'Video',
-      file: 'barradeau/Zibaut_Anouk_Mouvement/capture.mp4',
-      margin: true
+      file: 'resources/barradeau/Zibaut_Anouk_Mouvement/capture.mp4',
+      margin: true,
+      style: {
+        height: 'initial'
+      }
     },
     {
       type: 'SensoryTitle',
@@ -67,15 +109,15 @@ const content = {
       student: 'Anouk Zibaut'
     },
     {
+      type: 'IFrame',
+      source: 'resources/barradeau/Breithaupt_Kevin_Shader',
+      margin: true,
+    },
+    {
       type: 'SensoryTitle',
       title: 'Shader',
-      margin: true,
       student: 'Kevin Breithaupt'
     },
-    // {
-    //   type: 'IFrame',
-    //   source: 'resources/barradeau/Breithaupt_Kevin_Shader'
-    // },
     // Nathan Vogel
     {
       type: 'Video',

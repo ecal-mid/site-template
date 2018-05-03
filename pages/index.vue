@@ -1,7 +1,7 @@
 <template lang="pug">
 .site
   nav#menu
-    a(href='/').home Home
+    a(href='/').home
   header
     component.module(
       v-for='(module, index) in content.headerModules'
@@ -25,15 +25,24 @@
 
 
 <script>
+import BaseMixin from '@/mixins/BaseMixin'
 import ModulesList from '@/mixins/ModulesList'
 import content from '@/site/content'
 
 export default {
-  mixins: [ModulesList],
+  mixins: [ModulesList, BaseMixin],
   data() {
     return {
       content
     }
+  },
+  mounted() {
+    window.addEventListener('resize', e => {
+      this.busEmit('resize', e)
+    })
+    window.addEventListener('scroll', e => {
+      this.busEmit('scroll', e)
+    })
   },
   methods: {
     id (length) {
@@ -59,13 +68,14 @@ body
   padding-bottom: 50px
 .home
   display: inline-block
-  // width: 4.5em
-  // height: 4.5em
   padding: 0.5em
   font-size: 1.5em
   position: relative
   color: black
   text-decoration: none
+  transform: translate(20px, 20px) rotate(-45deg)
+  border-left: solid white 3px
+  border-top: solid white 3px
 .arrow
   box-sizing: border-box
   height: 100%
@@ -73,6 +83,7 @@ body
   border-top: solid black
   transform: rotate(-45deg)
 #menu
+  mix-blend-mode: difference
   position: fixed
   z-index: 2
   top: 0
@@ -83,6 +94,7 @@ body
   display: flex
   flex-wrap: wrap
   .module
+    position: relative
     flex: 0 1 auto
     height: 80vh
     background: white

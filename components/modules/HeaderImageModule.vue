@@ -36,6 +36,7 @@ export default {
     background-repeat: no-repeat
     background-clip: content-box
     .text
+      mix-blend-mode: difference
       position: absolute
       top: 50%
       left: 50%
