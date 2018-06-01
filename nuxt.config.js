@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Growth - Workshop with Nicolas Barradeau',
+    title: 'Sensory Augmentation - Workshop with Philip Schuette',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -11,10 +11,10 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: '/swiper.min.css' }
+      { rel: 'stylesheet', href: './swiper.min.css' }
     ],
     script: [
-      { src: '/swiper.min.js' }
+      { src: './swiper.min.js' }
     ]
   },
   /*
@@ -38,5 +38,8 @@ module.exports = {
         })
       }
     }
+  },
+  router: {
+    base: '/projects/2018/sensory-augmentation/'
   }
 }

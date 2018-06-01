@@ -23,8 +23,9 @@ const content = {
     },
     {
       type: 'SensoryTitle',
-      title: 'Shader Moon',
-      student: 'Tamara Viràg'
+      title: 'Moonshade',
+      student: 'Tamara Viràg',
+      description: 'Moonshade is a shader-generated moon that waxes or wanes based on the global illumination of the room/space in which it is. The darker the room, the fuller the moon.'
     },
     {
       type: 'Video',
@@ -37,11 +38,12 @@ const content = {
     {
       type: 'SensoryTitle',
       title: 'Oh boi',
-      student: 'Alfatih Al Zouabi'
+      student: 'Alfatih Al Zouabi',
+      description: 'A character and his environment deformed using a Leap Motion.'
     },
     {
       type: 'Video',
-      file: 'resources/barradeau/Boulenaz_jonathan_HeartBeat/SB_3_4_1.mp4',
+      file: 'resources/barradeau/Boulenaz_Jonathan_HeartBeat/SB_3_4_1.mp4',
       margin: true,
       style: {
         height: 'initial'
@@ -50,18 +52,22 @@ const content = {
     {
       type: 'SensoryTitle',
       title: 'Heart Beat',
-      student: 'Jonathan Boulenaz'
+      student: 'Jonathan Boulenaz',
+      description: 'Sport data visualization'
     },
     // Sebastien Matos
     {
       type: 'IFrame',
       source: 'resources/barradeau/Matos_Sébastien_Extrude',
-      margin: true
+      margin: true,
+      flag: 'Draw',
+      size: 100
     },
     {
       type: 'SensoryTitle',
       title: 'Extrude',
-      student: 'Sébastien Matos'
+      student: 'Sébastien Matos',
+      description: 'Extrusions generated from mouse traces'
     },
     // Bastien Mouthon
     {
@@ -79,7 +85,8 @@ const content = {
     {
       type: 'SensoryTitle',
       title: 'Cover Generator',
-      student: 'Bastien Mouthon'
+      student: 'Bastien Mouthon',
+      description: 'Generated covers from music metadata.'
     },
     // Iyo Bisseck
     {
@@ -94,6 +101,7 @@ const content = {
       type: 'SensoryTitle',
       title: 'Infected',
       student: 'Iyo Bisseck',
+      description: 'Development and multiplication of a bacteria using the Houdini procedural generation software'
     },
     {
       type: 'Video',
@@ -106,17 +114,21 @@ const content = {
     {
       type: 'SensoryTitle',
       title: 'Mouvement',
-      student: 'Anouk Zibaut'
+      student: 'Anouk Zibaut',
+      description: '"Errance visuel" a data visualization of the physical movement in school. The motion sensors maps the movements depending on the position of the passers-by and their speed. The variations are determined by the fluxes and their importance according to the time of the day.'
     },
     {
       type: 'IFrame',
       source: 'resources/barradeau/Breithaupt_Kevin_Shader',
       margin: true,
+      flag: 'Drag<br>-<br>Zoom',
+      size: 150
     },
     {
       type: 'SensoryTitle',
       title: 'Shader',
-      student: 'Kevin Breithaupt'
+      student: 'Kevin Breithaupt',
+      description: 'This project consists of a collection of experiments on using shaders, using the Three.js library which allows the display and creation of a 3D universe through programming. The collection includes several different tests and techniques on polygon and point displacement, fluid and terrain simulation, all available in a slideshow form.'
     },
     // Nathan Vogel
     {
@@ -130,18 +142,22 @@ const content = {
     {
       type: 'SensoryTitle',
       title: 'Soundla',
-      student: 'Nathan Vogel'
+      student: 'Nathan Vogel',
+      description: 'SOUNDLA uses musical audio data to procedurally build a tridimensional structure with the Diffusion-Limited Aggregation algorithm inside the 3D VFX software Houdini.'
     },
     // Ernest de Lapaillone
     {
       type: 'IFrame',
       source: 'resources/barradeau/de_Lapaillone_Ernest_Automorceau',
-      margin: true
+      margin: true,
+      flag: 'Play',
+      size: 100
     },
     {
       type: 'SensoryTitle',
       title: 'Automorceau',
-      student: 'Ernest de Lapaillone'
+      student: 'Ernest de Lapaillone',
+      description: 'Chord generator'
     },
   ]
 }

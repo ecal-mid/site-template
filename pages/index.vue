@@ -1,7 +1,7 @@
 <template lang="pug">
 .site
-  nav#menu
-    a(href='/').home
+  //- nav#menu
+  //-   a(href='/').home
   header
     component.module(
       v-for='(module, index) in content.headerModules'
@@ -27,7 +27,7 @@
 <script>
 import BaseMixin from '@/mixins/BaseMixin'
 import ModulesList from '@/mixins/ModulesList'
-import content from '@/site/content'
+import content from '@/static/site/contentPhilip'
 
 export default {
   mixins: [ModulesList, BaseMixin],

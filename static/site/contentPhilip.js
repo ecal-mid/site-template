@@ -5,22 +5,23 @@ const content = {
       batches: [
         {
           type: 'images',
-          path: 'img/posters/',
+          path: 'resources/img/posters/',
           files: [
+            'poster6.jpg',
             'poster3.jpg',
             'poster4.jpg',
             'poster5.jpg',
             'poster1.jpg',
             'poster2.jpg'
           ]
-        },
-        {
-          type: 'images',
-          path: 'img/',
-          files: [
-            'workshop_MID_03.jpg'
-          ]
         }
+        // {
+        //   type: 'images',
+        //   path: 'resources/img/',
+        //   files: [
+        //     'workshop_MID_03.jpg'
+        //   ]
+        // }
       ],
       style: {
         height: '100vh'
@@ -29,11 +30,31 @@ const content = {
   ],
   wrapperModules: [
     {
-      type: 'SensoryTitle',
-      title: 'Sensory Augmentation & Brain Plasticity',
-      professor: 'Workshop with Philip Shuette',
+      type: 'Video',
+      path: 'resources/img/prosh/',
+      margin: true,
+      file: 'Main_Final_3.mp4',
       style: {
-        'border-bottom': 'solid black 1px'
+        height: 'initial'
+      }
+    },
+    {
+      type: 'SensoryTitle',
+      title: 'Prosh',
+      students: 'Students: Pablo Bellon, Antoine Barras',
+      description: `The sonar, like echolocalisation, makes distance easy and
+        precise to quantify. By placing two ultrasonic sensors and two vibrtors
+        on a hat, the user is able to feel a precise feedback depending on the
+        proximity of an object. The vibrator would shake faster if the object
+        is closer.`,
+    },
+    {
+      type: 'Video',
+      path: 'resources/img/haptic_sound/',
+      margin: true,
+      file: 'BSHAPE.mp4',
+      style: {
+        height: 'initial'
       }
     },
     {
@@ -51,8 +72,9 @@ const content = {
     },
     {
       type: 'Video',
-      path: 'img/haptic_sound/',
-      file: 'BSHAPE.mp4',
+      path: 'resources/img/feeld/',
+      margin: true,
+      file: 'TextureFinal.mp4',
       style: {
         height: 'initial'
       }
@@ -72,12 +94,16 @@ const content = {
         developing the already existing sense of touch.`
     },
     {
-      type: 'Video',
-      path: 'img/feeld/',
-      file: 'TextureFinal.mp4',
-      style: {
-        height: 'initial'
-      }
+      type: 'Slider',
+      margin: true,
+      batches: [
+        {
+          type: 'images',
+          path: 'resources/img/data_scent/3d/',
+          range: [1, 19],
+          file: 'TheDataScent(/%num/%).jpg'
+        }
+      ]
     },
     {
       type: 'SensoryTitle',
@@ -95,24 +121,9 @@ const content = {
         know what kind of person you have in front of you.`
     },
     {
-      type: 'Slider',
-      batches: [
-        {
-          type: 'images',
-          path: 'img/data_scent/3d/',
-          range: [1, 19],
-          file: 'TheDataScent(/%num/%).jpg'
-        }
-      ]
-    },
-    {
-      type: 'SensoryTitle',
-      title: 'Interstellar Sensing',
-      students: 'Students: Kylan Luginbühl, Yaël Sidler'
-    },
-    {
       type: 'Video',
-      path: 'img/interstellar_sensing/',
+      path: 'resources/img/interstellar_sensing/',
+      margin: true,
       file: 'RenduPietroCompresser.mp4',
       style: {
         height: 'initial'
@@ -120,21 +131,8 @@ const content = {
     },
     {
       type: 'SensoryTitle',
-      title: 'Prosh',
-      students: 'Students: Pablo Bellon, Antoine Barras',
-      description: `The sonar, like echolocalisation, makes distance easy and
-        precise to quantify. By placing two ultrasonic sensors and two vibrtors
-        on a hat, the user is able to feel a precise feedback depending on the
-        proximity of an object. The vibrator would shake faster if the object
-        is closer.`,
-    },
-    {
-      type: 'Video',
-      path: 'img/prosh/',
-      file: 'Main_Final_3.mp4',
-      style: {
-        height: 'initial'
-      }
+      title: 'Interstellar Sensing',
+      students: 'Students: Kylan Luginbühl, Yaël Sidler'
     }
   ]
 }

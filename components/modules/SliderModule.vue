@@ -49,6 +49,7 @@ export default {
   position: relative
   height: 100%
   width: 100%
+  cursor: e-resize
   .swiper-container
     width: 100%
     height: 100%
